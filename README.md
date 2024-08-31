@@ -12,11 +12,4 @@ Pour créer une Autorité de Certification (CA) racine, suivez ces étapes :
 ```bash
 openssl genrsa -out rootCA.key 4096
 
-##Créer le Certificat Auto-signé pour la CA Racine
-```bash
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 3650 -out rootCA.crt -subj "/C=FR/ST=État/L=Ville/O=Organisation/OU=UnitéOrg/CN=RootCA"
 
-## 2. Configurer une CA Intermédiaire
-Une CA intermédiaire est configurée pour émettre des certificats, réduisant ainsi le risque pour la CA racine.
-
-## Générer la Clé Privée pour la CA Intermédiaire
