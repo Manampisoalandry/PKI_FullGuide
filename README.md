@@ -9,7 +9,7 @@ Ce guide décrit les étapes pour configurer une infrastructure à clé publique
 Pour créer une Autorité de Certification (CA) racine, suivez ces étapes :
 
 ### Générer la Clé Privée pour la CA Racine
-bash
+```bash
 openssl genrsa -out rootCA.key 4096
 
 ### Créer le Certificat Auto-signé pour la CA Racine
